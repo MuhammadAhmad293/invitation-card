@@ -1,7 +1,10 @@
 *
 {
     font-family: 'Quicksand', sans-serif;
-
+}
+.clr
+{
+    clear: both;
 }
 #view
 {
@@ -66,11 +69,14 @@
 .dow a
 {
     margin-top: 80px;
+    width: 180px;
+    height: 38px;
+    background-color: #17a2b8;
 }
 .dow a:hover
 {
     background-color:white;
-    color:  #46b9e0;
+    color:  #17a2b8;
 }
 .app-view
 {
@@ -130,43 +136,235 @@
 {
     margin: 0 24px;
 }
-.themes
+.theme
 {
     
 }
-.themes img
+.theme .formats
 {
-    width: 60%;
-    position: relative;
-    left: 30%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-}
-.formats
-{
-    padding-left: 90px;
-}
-.formats img
-{
-    margin-bottom: 40px;
     width: 80px;
+    margin-left: 60%;
+    margin-top: 5%;
 }
-.formats h2
+.theme .for img
+{
+    width: 30%;
+    padding-bottom: 3%;
+    position: absolute;
+    left: 15%;
+    transform: translate(-15%,-100%);
+}
+.themh2
+{
+   margin-left: 60%;
+   margin-top: 35px;
+   padding-right: 185px;
+}
+.themp
+{
+    margin-left: 60%;
+    margin-right: 6%;
+    padding-top: 30px;
+}
+.thema
+{
+    margin-left: 60%;
+    margin-top: 35px;
+    width: 183px;
+    height: 36px;
+    background-color: #51a6ea;
+    border: 2px solid #51a6ea;
+    border-radius: 3px; 
+}
+.thema:hover
+{
+    background-color: white;
+    border: 2px solid #51a6ea;
+    color: #51a6ea;
+}
+.theme h2
 {
     font-size: 38px;
     font-weight: 400;
     line-height: 44px;
     color: #263147;
-    padding-right: 185px;
 }
-.formats p
+.theme p
 {
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
     color: #656b76;
 }
-@media (max-width:765px)
+.theme .aset17
+{
+    width: 80px;
+    margin-left: 39%;
+    margin-top: 1%;
+}
+.theme .for2 img
+{
+    width: 30%;
+    padding-bottom: 3%;
+    position: absolute;
+    right: 0%;
+    transform: translate(-15%,-100%);
+}
+.themh22
+{
+   text-align: right;
+   margin-right: 53%;
+   padding-left: 5%;
+   margin-top: 35px;
+}
+.themp2
+{
+    text-align: right;
+    margin-right: 53%;
+    padding-left: 13%;
+    padding-top: 30px;
+}
+.thema2
+{
+    margin-left: 31%;
+    margin-top: 35px;
+    width: 183px;
+    height: 36px;
+    background-color: #51a6ea;
+    border: 2px solid #51a6ea;
+    border-radius: 3px; 
+}
+.thema2:hover
+{
+    background-color: white;
+    border: 2px solid #51a6ea;
+    color: #51a6ea;   
+}
+.line
+{
+    position: absolute;
+    left: 50%;
+    top: 41%;
+    width: 82px;
+    height: 2px;
+    background-color: #51a6ea;
+}
+.line::after
+{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(81,166,234,.30000000000000004);
+    background-color: #51a6ea;
+}
+.line::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(81,166,234,.30000000000000004);
+    background-color: #51a6ea;
+}
+.line1
+{
+    position: absolute;
+    left: 50%;
+    top: 34%;
+    width: 82px;
+    height: 2px;
+    background-color: #51a6ea;
+}
+.line1:after
+{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(81,166,234,.30000000000000004);
+    background-color: #51a6ea;
+}
+.line1::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(81,166,234,.30000000000000004);
+    background-color: #51a6ea;
+}
+@media (max-width:1200px) and (min-width:1020px)
+{
+    .theme .themh2
+    {
+        background-color: chartreuse;
+        padding-right: 105px;
+    }
+}
+@media (max-width:1020px) and (min-width:991px)
+{
+    .theme .themh2
+    {
+        padding-right: 0px;
+    }
+    .line
+    {
+        left: 49%;
+        top: 39%;
+        width: 82px;
+        height: 2px;
+    }
+}
+@media (max-width:991px) and (min-width:770px)
+{
+    .theme .themh2
+    {
+        padding-right: 0px;
+    }
+    .themp
+    {
+    margin-right: 1%;
+    padding-top: 3px;
+    }
+    .line
+    {
+        left: 46%;
+        top: 34%;
+        width: 82px;
+        height: 2px;
+    }
+    .theme .for img
+    {
+    width: 40%;
+    padding-bottom: 3%;
+    position: absolute;
+    left: 5%;
+    top: 95%;
+    transform: translate(-15%,-100%);
+    }
+    .theme .themh2
+    {
+        margin-top: 1px; 
+    }
+    .thema
+    {
+    margin-top: 3px;
+    }
+}
+@media (max-width:770px)
 {
     .taxi ul
     {
@@ -176,28 +374,65 @@
     {
         margin-top: 33px;
     }   
-    .formats img
+    .theme
     {
-        position: relative;
-        left: 30%;
+        background-image: linear-gradient(180deg,#edf7ff,#fff);
+        height: 160vh;
     }
-    .formats h2
+    .theme .themh2, .themh22
     {
-        padding-right: 15px;
+        margin: auto;
+        padding:5%;
         text-align: center;
     }
-    .formats p
+    .theme .formats
     {
-        text-align: center;
+    width: 80px;
+    margin-left: 42%;
+    margin-top: 7%;
+    margin-bottom: 5%;
     }
-    .formats a
+    .theme .aset17
     {
-        position: relative;
-        left: 25%;   
+    width: 80px;
+    margin-left: 42%;
+    margin-top: 10%;
     }
-    .themes img
+    .themp
     {
-        position: relative;
-        left: 35%;   
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 7%;
+    text-align: center;
     }
+    .themp2
+    {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 7%;
+    text-align: center;
+    }
+.thema, .thema2
+    {
+    margin-left: 25%;
+    margin-top: 15%;
+    }
+    .line, .line1
+    {
+        display: none;
+    }
+    .theme .for img
+{
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    transform: translate(-15%, 3%);
+}
+.theme .for2 img
+{
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    transform: translate(-0%, 3%);
+}
 }
