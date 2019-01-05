@@ -28,9 +28,18 @@
     background-color: white;
     color: #46b9e9;
 }
+.team
+{
+    display: block;
+    background-color: #46b9e9;
+}
+.team1
+{
+    background-color: #c772c7;
+    display: none;
+}
 .cre-des
 {
-    background-color:#46b9e9;
     margin-top: 150px;
 }
 .cre-des h1
@@ -50,10 +59,17 @@
     overflow: hidden;
     position: relative;
     bottom: 100%;
-    animation-name: muh;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: both;
+}
+.hd11
+{
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 62px;
+    color: #fff;
+    padding-right: 30%;
+    overflow: hidden;
+    position: relative;
+    bottom: 100%;
 }
 .dow
 {
@@ -89,10 +105,10 @@
     width: 50%;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 40%;
     transform: translate(-50%,-50%);
     display: none;
-    z-index: 1314653;
+    z-index:1;
     box-shadow: 9px 9px 51px rgba(39,114,146,.63);
 }
 .app-view .app-img2
@@ -101,12 +117,31 @@
     overflow: hidden;
     position: relative;
     bottom: 100%;
-    animation-name: muh;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: both;
+    opacity: 1;
 }
-@keyframes muh
+.app-view .app-img11
+{
+    width: 75%;
+    position: absolute;
+    left: 50%;
+    top: 44%;
+    transform: translate(-50%,-50%);
+    display: none;
+    z-index: 1314653;
+    box-shadow: 9px 9px 51px rgba(127,70,127,.63);
+    opacity: 1;
+}
+.app-view .app-img21
+{
+    padding-top: 10%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    bottom: 150%;
+    display: none;
+    z-index: 2;
+}
+@keyframes mu
 {
     100%{bottom:0%};
 }
